@@ -79,6 +79,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
+      contents: read
+      pages: write  # Add this line
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v3
